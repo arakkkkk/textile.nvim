@@ -1,8 +1,3 @@
-print("-----------------")
-print("-----------------")
-print("-----------------")
-print("-----------------")
-print("-----------------")
 -- filetype
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 	pattern = "*.tt",
