@@ -1,15 +1,14 @@
 # textile.lua
+
+Provide textile highlight and lsp settings with nvim-lspconfig
+
 ## Instration
 ### lazy.nvim
 ```
 use{
-  '',
+  'arakkkkk/textile.nvim',
   requires = {
-    'delphinus/telescope-memolist.nvim',
+    'neovim/nvim-lspconfig',
   },
-  config = function()
-    require("telescope").load_extension("memolist")
-  end,
 }
 ```
-# textile.nvim
