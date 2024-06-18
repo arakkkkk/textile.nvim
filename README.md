@@ -12,3 +12,7 @@ use{
   },
 }
 ```
+
+## Requires
+* [textilels](https://github.com/arakkkkk/textilels)
+
