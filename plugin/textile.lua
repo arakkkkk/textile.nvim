@@ -14,6 +14,7 @@ vim.api.nvim_create_autocmd({ "VimEnter", "WinEnter" }, {
 	command = [[
 	call matchadd('TextileHeader', 'h\d\+\. .\+')
 	call matchadd('TextileParagraph', 'p.\. .\+')
+	call matchadd('TextileList', '^*\+ ')
 	]],
 })
 vim.api.nvim_create_autocmd({ "ColorScheme" }, {
@@ -22,6 +23,7 @@ vim.api.nvim_create_autocmd({ "ColorScheme" }, {
 	command = [[
 	highlight default TextileHeader ctermfg=11 guifg=orange
 	highlight default TextileParagraph ctermfg=11 guifg=orange
+	highlight default TextileParagraph ctermfg=4 guifg=blue
 	]],
 })
 
