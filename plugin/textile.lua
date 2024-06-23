@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd({ "ColorScheme" }, {
 	command = [[
 	highlight default TextileHeader ctermfg=11 guifg=orange
 	highlight default TextileParagraph ctermfg=11 guifg=orange
-	highlight default TextileParagraph ctermfg=4 guifg=blue
+	highlight default TextileList ctermfg=4 guifg=skyblue
 	]],
 })
 
@@ -33,13 +33,13 @@ local result = handle:read("*a")
 handle:close()
 
 if result == "" then
-	print("textilels is not installed")
+	-- print("textilels is not installed")
 	return
 end
 
 local lspconfig = require("lspconfig")
 if not lspconfig then
-	print("nvim-lspconfig is not installed")
+	-- print("nvim-lspconfig is not installed")
 	return
 end
 local configs = require("lspconfig.configs")
